@@ -1,6 +1,7 @@
 # Skcript CI: self-hosted airlock runners only, never ubuntu-/macos-/windows-* (GitHub-hosted).
 # No image tarballs as artifacts: images go to GHCR from skcript-deploy. Artifacts keep retention-days: 1.
 # Deploy or prod jobs never go here: they need the `case` label (skcript-deploy template).
+# New featureos repo: add it to runner group `ci` (org settings) or its jobs queue forever.
 name: CI
 on:
   pull_request:
